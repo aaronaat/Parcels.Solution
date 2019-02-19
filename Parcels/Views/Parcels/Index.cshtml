@@ -1,0 +1,10 @@
+@using Parcels.Models;
+
+<h1>Parcels</h1>
+<h4> Your parcel dimension is: </h4>
+<p><strong>@Model.GetLength() x @Model.GetWidth() x @Model.GetHeight() with a weight of @Model.GetWeight() lbs</strong></p>
+<h4> Your cost to ship this parcel is:</h4>
+<p>
+   <strong> $ @Model.CostToShip() </strong>
+</p>
+<a href="/parcels/new">Check new shipping cost</a>

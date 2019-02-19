@@ -6,11 +6,10 @@ namespace Parcels.Controllers
   public class HomeController : Controller
   {
 
-    [Route("/")]
+    [HttpGet("/")]
     public ActionResult Index()
     {
-      Parcel starterItem = new Parcel(4, 4, 4, 4);
-      return View(starterItem);
+      return View();
     }
 
   }

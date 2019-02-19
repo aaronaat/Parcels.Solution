@@ -11,6 +11,7 @@ namespace Parcels.Models {
     private int _weight;
     private int _volume;
     private int _price;
+    //private static List<Parcel> _instances = new List<Parcel> {};
 
     public Parcel (int length, int width, int height, int weight)
     {
@@ -18,7 +19,12 @@ namespace Parcels.Models {
       _width = width;
       _height = height;
       _weight = weight;
+      //_instances.Add(this);
     }
+    // public static List<Parcel> GetAll()
+    // {
+    //   return _instances;
+    // }
     public int GetLength()
     {
       return _length;
